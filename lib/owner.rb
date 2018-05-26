@@ -9,6 +9,16 @@ class Owner
   end 
   
   
+  def self.all
+    @all
+  end 
+  
+  
+  def self.count 
+    @count 
+  end 
+  
+  
   def reset_all
     @@all = []
     @@count = 0 
