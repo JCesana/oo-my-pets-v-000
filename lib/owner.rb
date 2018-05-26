@@ -9,6 +9,10 @@ class Owner
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
+  def buy_fish
+    
+  end 
+  
   def say_species
     "I am a #{@species}."
   end 
@@ -17,11 +21,9 @@ class Owner
     @all
   end 
   
-  
   def self.count 
     @count 
   end 
-  
   
   def reset_all
     @@all = []
