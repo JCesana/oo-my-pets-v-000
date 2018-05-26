@@ -1,12 +1,22 @@
 class Owner
   @@all = [] 
   @@count = 0 
+  attr_accessor :name 
   attr_reader :species 
   
   def initialize(species)
     @species = species
     @@all << self 
     @@count += 1
+  end 
+  
+  def say_species
+    @species 
+  end 
+  
+  
+  def name 
+    @name 
   end 
   
   
