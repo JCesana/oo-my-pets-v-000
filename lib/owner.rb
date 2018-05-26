@@ -25,7 +25,7 @@ class Owner
   end 
   
   def walks_dogs
-      
+      @pets[:dogs].each { |dog| dog.mood = "happy" }
   end 
   
   def say_species
