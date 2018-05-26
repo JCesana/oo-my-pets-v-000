@@ -40,7 +40,9 @@ class Owner
     @pets[:dogs].each { |dog| dog.mood = "nervous" }
     @pets[:cats].each { |cat| cat.mood = "nervous" }
     @pets[:fishes].each { |fish| fish.mood = "nervous" }
-    
+    @pets[:dogs].clear
+    @pets[:cats].clear
+    @pets[:fishes].clear
     
   end 
   def say_species
