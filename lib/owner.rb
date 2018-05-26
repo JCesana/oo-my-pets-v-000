@@ -24,6 +24,7 @@ class Owner
     @pets[:dogs] << dog
   end 
   
+  def walks
   def say_species
     "I am a #{@species}."
   end 
