@@ -1,6 +1,10 @@
 class Owner
-  @@all_owners = [] 
-  @@all = 0 
+  @@all = [] 
+  @@count = 0 
+  
+  def initialize(name)
+    @name = name 
+  end 
   
   
 end
