@@ -9,6 +9,22 @@ class Owner
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
+
+  def self.all
+    @@all
+  end 
+  
+  
+  def self.count 
+    @@count 
+  end 
+  
+  
+  def reset_all
+    @@all = []
+    @@count = 0 
+  end 
+  
   
   def buy_fish(name)
     fish = Fish.new(name)
@@ -65,20 +81,4 @@ class Owner
     "I am a #{@species}."
   end 
 
-
-  def self.all
-    @all
-  end 
-  
-  
-  def self.count 
-    @count 
-  end 
-  
-  
-  def reset_all
-    @@all = []
-    @@count = 0 
-  end 
-  
 end
